@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Drag and Drop</h1>
+    <p><marquee direction="right" scrollamount="25">Drag the image back and forth between the two div elements.</marquee></p>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="https://t3.ftcdn.net/jpg/03/18/60/62/360_F_318606217_Hk8jo2MVoI33SQOkYrfOF929J7JgIP0P.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="190" height="300">
+    <img src="https://t4.ftcdn.net/jpg/03/08/82/39/360_F_308823955_XTMT8TNKmOYnPEwmEmfnskgNqQv3hQE5.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="190" height="300">
+</div>
+
+   <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+   <button onclick="resetImages()" id="btn">Reset</button>
+
+   <script src="index.js"></script>
+</body>
+</html>
